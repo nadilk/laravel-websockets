@@ -1,6 +1,6 @@
 <?php
 
-namespace BeyondCode\LaravelWebSockets\WebSockets\Messages;
+namespace BeyondCode\LaravelWebSockets\Server\Messages;
 
 use BeyondCode\LaravelWebSockets\WebSockets\Channels\ChannelManager;
 use Illuminate\Support\Str;
