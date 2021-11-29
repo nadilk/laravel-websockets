@@ -2,7 +2,8 @@
 
 namespace BeyondCode\LaravelWebSockets\Server\Messages;
 
-use BeyondCode\LaravelWebSockets\WebSockets\Channels\ChannelManager;
+use BeyondCode\LaravelWebSockets\Contracts\ChannelManager;
+use BeyondCode\LaravelWebSockets\Contracts\PusherMessage;
 use Ratchet\ConnectionInterface;
 use stdClass;
 
@@ -14,7 +15,6 @@ class PusherHostMessage implements PusherMessage
     /** @var \Ratchet\ConnectionInterface */
     protected $connection;
 
-    /** @var \BeyondCode\LaravelWebSockets\WebSockets\Channels\ChannelManager */
     protected $channelManager;
 
     public function __construct(stdClass $payload, ConnectionInterface $connection, ChannelManager $channelManager)
